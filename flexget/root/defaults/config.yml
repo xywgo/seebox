@@ -1,0 +1,13 @@
+web_server:
+  bind: 0.0.0.0
+  port: 8600
+
+tasks:
+  example-task:
+    rss: http://example.com/feed.xml
+    download: /torrents
+    series:
+      - some series 1
+      - some series 2
+
+schedules: no
