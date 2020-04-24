@@ -1,0 +1,12 @@
+#!/usr/bin/with-contenv bash
+
+command="
+flexget
+-c /config/config.yml
+daemon start --autoreload-config
+"
+
+echo "[services.d] executing => $(echo $command)"
+
+exec \
+	s6-setuidgid abc $command
