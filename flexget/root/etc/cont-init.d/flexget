@@ -1,0 +1,20 @@
+#!/usr/bin/with-contenv bash
+
+# make folders
+
+# remove config-lock
+[ [ -f /config/.config-lock ] ] && \
+        rm -f /config/.config-lock
+
+# copy config.yml
+[[ ! -f /config/config.yml ]] && \
+        cp /defaults/config.yml /config/config.yml
+
+# set WEBUI_PASSWD
+if [[ ! -z "${WEBUI_PASSWD}" ]]; then
+  flexget -c /config/config.yml web passwd "${WEBUI_PASSWD}"
+fi
+
+# permissions
+chown -R abc:abc \
+	/config /torrents
