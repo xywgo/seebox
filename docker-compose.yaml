@@ -1,0 +1,91 @@
+version: "3"
+
+services:
+  v2ray:
+    image: v2ray/official
+    container_name: v2ray
+    restart: always
+    command: v2ray -config=/etc/v2ray/config.json
+    ports:
+      - "45555:45555"
+      #- "127.0.0.1:8889:8889"
+    volumes:
+      - ./config/v2ray:/etc/v2ray
+      #- /etc/v2ray/v2ray.crt:/etc/v2ray/v2ray.crt
+      #- /etc/v2ray/v2ray.key:/etc/v2ray/v2ray.key
+  qbittorrent:
+    image: linuxserver/qbittorrent
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - UMASK_SET=022
+      - WEBUI_PORT=8080
+    volumes:
+      - ./config/qbittorrent:/config
+      - /home/xywgo/downloads:/downloads
+    ports:
+      - 7000:7000
+      - 7000:7000/udp
+      - 8080:8080
+    restart: unless-stopped
+  filebrowser:
+    image: filebrowser/filebrowser
+    container_name: filebrowser
+    ports:
+      - "8000:80"
+    volumes:
+      - /home/xywgo/downloads:/data
+    environment:
+      - PUID=1000
+      - PGID=1000
+    restart: unless-stopped
+  aria2:
+    image: p3terx/aria2-pro
+    container_name: aria2
+    volumes: 
+      - ./config/aria2:/config
+      - /home/xywgo/downlads:/downlads
+    environment: 
+      - PUID=1000
+      - PGID=1000
+      - RPC_SECRET=xywgo
+      - TZ=Asia/Shanghai
+      - TRACKERS=no
+      - DISK_CACHE=64M
+    ports:
+      - "6800:6800"
+      - "6888:6888"
+      - "6888:6888/udp"
+  plex:
+    image: linuxserver/plex
+    network_mode: host
+    container_name: plex
+    volumes:
+      - /home/xywgo/downloads:/media:rw # The media folder
+      - /home/xywgo/downloads/transcode:/transcode # Transcoder temporary directory
+      - ./config/plex:/config # Configurations
+    environment:
+      - SUID=1000
+      - SGID=1000
+      - PLEX_CLAIM=claim-NMoZxTNjv3SNaEnE3WZc # Replace this TOKEN!!! acess https://www.plex.tv/claim/ to get it
+      - UMASK_SET=022 #optional
+    restart: unless-stopped
+    hostname: "BuyVM" # change the name to whatever you like
+  resilio-sync:
+    image: linuxserver/resilio-sync
+    container_name: resilio-sync
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - UMASK_SET=022
+    volumes:
+      - ./config/resilio:/config
+      - /home/xywgo/downloads:/downloads
+      - /home/xywgo/downloads:/sync
+    ports:
+      - 8886:8888
+      - 55555:55555
+    restart: unless-stopped
