@@ -46,7 +46,7 @@ services:
     container_name: aria2
     volumes: 
       - ./config/aria2:/config
-      - /home/xywgo/downlads:/downlads
+      - /home/xywgo/downloads:/downloads
     environment: 
       - PUID=1000
       - PGID=1000
@@ -67,8 +67,8 @@ services:
       - /home/xywgo/downloads/transcode:/transcode # Transcoder temporary directory
       - ./config/plex:/config # Configurations
     environment:
-      - SUID=1000
-      - SGID=1000
+      - PUID=1000
+      - PGID=1000
       - PLEX_CLAIM=claim-NMoZxTNjv3SNaEnE3WZc # Replace this TOKEN!!! acess https://www.plex.tv/claim/ to get it
       - UMASK_SET=022 #optional
     restart: unless-stopped
