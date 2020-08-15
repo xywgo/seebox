@@ -51,7 +51,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - /home/xywgo/downloads:/data
+      - /home/xywgo/downloads:/srv
     environment:
       - PUID=1000
       - PGID=1000
@@ -84,7 +84,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - PLEX_CLAIM=claim-NMoZxTNjv3SNaEnE3WZc # Replace this TOKEN!!! acess https://www.plex.tv/claim/ to get it
+      - PLEX_CLAIM=claim-a2RxKnPcRy7u4713y7ns # Replace this TOKEN!!! acess https://www.plex.tv/claim/ to get it
       - UMASK_SET=022 #optional
     restart: unless-stopped
     hostname: "BuyVM" # change the name to whatever you like

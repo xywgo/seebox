@@ -1,0 +1,47 @@
+(N) 2020-08-15T16:36:10 - qBittorrent v4.2.5 started
+(N) 2020-08-15T16:36:10 - Using config directory: /config/qBittorrent/
+(I) 2020-08-15T16:36:10 - Trying to listen on: 0.0.0.0:6881,[::]:6881
+(N) 2020-08-15T16:36:10 - Peer ID: -qB4250-
+(N) 2020-08-15T16:36:10 - HTTP User-Agent is 'qBittorrent/4.2.5'
+(I) 2020-08-15T16:36:10 - DHT support [ON]
+(I) 2020-08-15T16:36:10 - Local Peer Discovery support [ON]
+(I) 2020-08-15T16:36:10 - PeX support [ON]
+(I) 2020-08-15T16:36:10 - Anonymous mode [OFF]
+(I) 2020-08-15T16:36:10 - Encryption support [ON]
+(W) 2020-08-15T16:36:10 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2020-08-15T16:36:10 - Using built-in Web UI.
+(W) 2020-08-15T16:36:10 - Couldn't load Web UI translation for selected locale (en_US).
+(N) 2020-08-15T16:36:10 - Web UI: Now listening on IP: *, port: 8080
+(I) 2020-08-15T16:36:10 - Successfully listening on IP: 127.0.0.1, port: TCP/6881
+(I) 2020-08-15T16:36:10 - Successfully listening on IP: 127.0.0.1, port: UDP/6881
+(I) 2020-08-15T16:36:10 - Successfully listening on IP: 172.19.0.4, port: TCP/6881
+(I) 2020-08-15T16:36:10 - Successfully listening on IP: 172.19.0.4, port: UDP/6881
+(I) 2020-08-15T16:36:10 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Aug 1 07:57:26 2020.
+(I) 2020-08-15T16:36:10 - Successfully updated IP geolocation database.
+(I) 2020-08-15T16:36:15 - Detected external IP: 209.141.58.238
+(W) 2020-08-15T16:46:45 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.19.0.1, username: xywgo
+(W) 2020-08-15T16:46:49 - WebAPI login failure. Reason: invalid credentials, attempt count: 2, IP: ::ffff:172.19.0.1, username: admin
+(N) 2020-08-15T16:46:56 - WebAPI login success. IP: ::ffff:172.19.0.1
+(N) 2020-08-15T16:48:18 - 已成功加载所选地区 (zh) 的 Web UI 翻译。
+(N) 2020-08-15T16:48:18 - Web UI：正在监听 IP：*，端口：8080
+(N) 2020-08-15T16:50:02 - Web UI：正在监听 IP：*，端口：8080
+(I) 2020-08-15T17:00:05 - UPnP / NAT-PMP 支持 [关闭]
+(N) 2020-08-15T17:00:32 - qBittorrent v4.2.5 已启动
+(N) 2020-08-15T17:00:32 - 使用配置目录：/config/qBittorrent/
+(I) 2020-08-15T17:00:32 - 尝试监听：0.0.0.0:6881,[::]:6881
+(N) 2020-08-15T17:00:32 - Peer ID：-qB4250-
+(N) 2020-08-15T17:00:32 - HTTP User-Agent 为 'qBittorrent/4.2.5'
+(I) 2020-08-15T17:00:32 - DHT 支持 [开启]
+(I) 2020-08-15T17:00:32 - 本地用户发现支持 [开启]
+(I) 2020-08-15T17:00:32 - PeX 支持 [开启]
+(I) 2020-08-15T17:00:32 - 匿名模式 [关闭]
+(I) 2020-08-15T17:00:32 - 加密支持 [开启]
+(I) 2020-08-15T17:00:32 - IP 地理数据库已加载。类型：DBIP-Country-Lite。构建时间：Sat Aug 1 07:57:26 2020。
+(N) 2020-08-15T17:00:32 - 使用内置 Web UI。
+(N) 2020-08-15T17:00:32 - 已成功加载所选地区 (zh) 的 Web UI 翻译。
+(N) 2020-08-15T17:00:32 - Web UI：正在监听 IP：*，端口：8080
+(I) 2020-08-15T17:00:32 - 成功监听 IP：127.0.0.1，端口：TCP/6881
+(I) 2020-08-15T17:00:32 - 成功监听 IP：127.0.0.1，端口：UDP/6881
+(I) 2020-08-15T17:00:32 - 成功监听 IP：172.19.0.4，端口：TCP/6881
+(I) 2020-08-15T17:00:32 - 成功监听 IP：172.19.0.4，端口：UDP/6881
+(I) 2020-08-15T17:00:34 - 检测到外部 IP：209.141.58.238
