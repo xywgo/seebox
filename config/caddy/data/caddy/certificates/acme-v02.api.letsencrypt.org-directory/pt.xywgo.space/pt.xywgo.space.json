@@ -1,0 +1,10 @@
+{
+	"sans": [
+		"pt.xywgo.space"
+	],
+	"issuer_data": {
+		"domain": "pt.xywgo.space",
+		"certUrl": "https://acme-v02.api.letsencrypt.org/acme/cert/03a810304b039660b4f4007bd5750879bce6",
+		"certStableUrl": "https://acme-v02.api.letsencrypt.org/acme/cert/03a810304b039660b4f4007bd5750879bce6"
+	}
+}

@@ -1,6 +1,33 @@
 version: "3"
 
 services:
+  trojan:
+    image: trojangfw/trojan
+    container_name: trojan
+    restart: always
+    ports:
+        - "443:443"
+    networks:
+        - fq 
+    volumes: 
+        - ./config/trojan:/config
+        - ./config/caddy/data/caddy/certificates/acme-v02.api.letsencrypt.org-directory:/ssl
+    depends_on: 
+        - caddy
+
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    restart: always
+    ports: 
+        - "80:80"
+    networks:
+        - fq
+    volumes: 
+        - ./config/caddy/Caddyfile:/etc/caddy/Caddyfile
+        - ./config/site:/usr/share/caddy
+        - ./config/caddy/data:/data
+        - ./config/caddy/config:/config
   qbittorrent:
     image: linuxserver/qbittorrent
     container_name: qbittorrent
@@ -77,3 +104,5 @@ services:
       - 8886:8888
       - 55555:55555
     restart: unless-stopped
+networks:
+  fq:
