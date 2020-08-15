@@ -1,18 +1,6 @@
 version: "3"
 
 services:
-  v2ray:
-    image: v2ray/official
-    container_name: v2ray
-    restart: always
-    command: v2ray -config=/etc/v2ray/config.json
-    ports:
-      - "45555:45555"
-      #- "127.0.0.1:8889:8889"
-    volumes:
-      - ./config/v2ray:/etc/v2ray
-      #- /etc/v2ray/v2ray.crt:/etc/v2ray/v2ray.crt
-      #- /etc/v2ray/v2ray.key:/etc/v2ray/v2ray.key
   qbittorrent:
     image: linuxserver/qbittorrent
     container_name: qbittorrent
