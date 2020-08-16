@@ -1,0 +1,122 @@
+Aug 16, 2020 02:00:36.153 [0x7f7a794d6700] INFO - Plex Media Scanner v1.19.5.3112-b23ab3896 - Docker Docker Container (LinuxServer.io) x86_64 - build: linux-x86_64 - GMT 00:00
+Aug 16, 2020 02:00:36.154 [0x7f7a794d6700] INFO - Linux version: 4.15.0-112-generic, language: en-US
+Aug 16, 2020 02:00:36.154 [0x7f7a794d6700] INFO - Processor AMD Ryzen 9 3900X 12-Core Processor            
+Aug 16, 2020 02:00:36.154 [0x7f7a794d6700] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze-deeply --item 37 --log-file-suffix  Deep Analysis
+Aug 16, 2020 02:00:36.168 [0x7f7a81c22300] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.26.0, threadsafe=1
+Aug 16, 2020 02:00:36.310 [0x7f7a81c22300] DEBUG - [MI] Opening input file: "/media/tv/online/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4"
+Aug 16, 2020 02:00:36.312 [0x7f7a81c22300] DEBUG - [FFMPEG] - Opening '/media/tv/online/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4' for reading
+Aug 16, 2020 02:00:36.312 [0x7f7a81c22300] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto'
+Aug 16, 2020 02:00:36.316 [0x7f7a81c22300] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Aug 16, 2020 02:00:36.316 [0x7f7a81c22300] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Aug 16, 2020 02:00:36.318 [0x7f7a81c22300] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Aug 16, 2020 02:00:36.329 [0x7f7a81c22300] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 10800, duration: 367023600
+Aug 16, 2020 02:00:36.338 [0x7f7a81c22300] DEBUG - [FFMPEG] - Offset DTS by 10800 to make first pts zero.
+Aug 16, 2020 02:00:36.340 [0x7f7a81c22300] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Aug 16, 2020 02:00:36.352 [0x7f7a81c22300] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 179846150
+Aug 16, 2020 02:00:36.357 [0x7f7a81c22300] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 2586478689 bytes read:3457463 seeks:1 nb_streams:2
+Aug 16, 2020 02:00:36.358 [0x7f7a81c22300] DEBUG - [FFMPEG] - nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0
+Aug 16, 2020 02:00:36.358 [0x7f7a81c22300] DEBUG - [FFMPEG] - Decoding VPS
+Aug 16, 2020 02:00:36.358 [0x7f7a81c22300] DEBUG - [FFMPEG] - Main profile bitstream
+Aug 16, 2020 02:00:36.358 [0x7f7a81c22300] DEBUG - [FFMPEG] - nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0
+Aug 16, 2020 02:00:36.358 [0x7f7a81c22300] DEBUG - [FFMPEG] - Decoding SPS
+Aug 16, 2020 02:00:36.358 [0x7f7a81c22300] DEBUG - [FFMPEG] - Main profile bitstream
+Aug 16, 2020 02:00:36.358 [0x7f7a81c22300] DEBUG - [FFMPEG] - Decoding VUI
+Aug 16, 2020 02:00:36.358 [0x7f7a81c22300] DEBUG - [FFMPEG] - nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0
+Aug 16, 2020 02:00:36.358 [0x7f7a81c22300] DEBUG - [FFMPEG] - Decoding PPS
+Aug 16, 2020 02:00:36.362 [0x7f7a81c22300] DEBUG - [FFMPEG] - All info found
+Aug 16, 2020 02:00:36.362 [0x7f7a81c22300] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 47542 bytes read:3523598 seeks:2 frames:5
+Aug 16, 2020 02:00:36.656 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 10000 packets at 146.842993
+Aug 16, 2020 02:00:36.892 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 20000 packets at 293.760000
+Aug 16, 2020 02:00:37.180 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 30000 packets at 440.680000
+Aug 16, 2020 02:00:37.486 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 40000 packets at 587.600000
+Aug 16, 2020 02:00:37.760 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 50000 packets at 734.516825
+Aug 16, 2020 02:00:38.052 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 60000 packets at 881.429478
+Aug 16, 2020 02:00:38.276 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 70000 packets at 1028.342132
+Aug 16, 2020 02:00:38.484 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 80000 packets at 1175.254785
+Aug 16, 2020 02:00:38.658 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 90000 packets at 1322.167438
+Aug 16, 2020 02:00:38.967 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 100000 packets at 1469.080091
+Aug 16, 2020 02:00:39.262 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 110000 packets at 1616.000000
+Aug 16, 2020 02:00:39.437 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 120000 packets at 1762.920000
+Aug 16, 2020 02:00:39.694 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 130000 packets at 1909.840000
+Aug 16, 2020 02:00:39.943 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 140000 packets at 2056.753923
+Aug 16, 2020 02:00:40.201 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 150000 packets at 2203.666576
+Aug 16, 2020 02:00:40.526 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 160000 packets at 2350.579229
+Aug 16, 2020 02:00:40.781 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 170000 packets at 2497.491882
+Aug 16, 2020 02:00:40.982 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 180000 packets at 2644.404535
+Aug 16, 2020 02:00:41.195 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 190000 packets at 2791.320000
+Aug 16, 2020 02:00:41.461 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 200000 packets at 2938.240000
+Aug 16, 2020 02:00:41.752 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 210000 packets at 3085.160000
+Aug 16, 2020 02:00:41.975 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 220000 packets at 3232.078367
+Aug 16, 2020 02:00:42.118 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 230000 packets at 3378.991020
+Aug 16, 2020 02:00:42.311 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 240000 packets at 3525.903673
+Aug 16, 2020 02:00:42.518 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 250000 packets at 3672.816327
+Aug 16, 2020 02:00:42.724 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 260000 packets at 3819.728980
+Aug 16, 2020 02:00:42.950 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 270000 packets at 3966.641633
+Aug 16, 2020 02:00:43.113 [0x7f7a81c22300] DEBUG - Deep Analysis: Sorting packets
+Aug 16, 2020 02:00:43.125 [0x7f7a81c22300] DEBUG - Deep Analysis: Performing file bitrate analysis
+Aug 16, 2020 02:00:43.184 [0x7f7a81c22300] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 0
+Aug 16, 2020 02:00:43.207 [0x7f7a81c22300] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 1
+Aug 16, 2020 02:00:43.218 [0x7f7a81c22300] DEBUG - Deep Analysis: Saving GoP analysis for stream 0
+Aug 16, 2020 02:00:43.221 [0x7f7a81c22300] DEBUG - Deep Analysis: Saving bitrate analysis
+Aug 16, 2020 02:00:43.224 [0x7f7a81c22300] DEBUG - Updating part with ID=38 [/media/tv/online/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4]
+Aug 16, 2020 02:00:43.225 [0x7f7a81c22300] DEBUG - [MI] Closing input file: "/media/tv/online/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4"
+Aug 16, 2020 02:00:43.227 [0x7f7a81c22300] DEBUG - [MI] Opening input file: "/media/tv/online/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part2.2160p.WEB-DL.H265.AAC-FLTTH.mp4"
+Aug 16, 2020 02:00:43.228 [0x7f7a81c22300] DEBUG - [FFMPEG] - Opening '/media/tv/online/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part2.2160p.WEB-DL.H265.AAC-FLTTH.mp4' for reading
+Aug 16, 2020 02:00:43.229 [0x7f7a81c22300] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto'
+Aug 16, 2020 02:00:43.238 [0x7f7a81c22300] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Aug 16, 2020 02:00:43.238 [0x7f7a81c22300] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Aug 16, 2020 02:00:43.240 [0x7f7a81c22300] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Aug 16, 2020 02:00:43.249 [0x7f7a81c22300] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 10800, duration: 368964000
+Aug 16, 2020 02:00:43.252 [0x7f7a81c22300] DEBUG - [FFMPEG] - Offset DTS by 10800 to make first pts zero.
+Aug 16, 2020 02:00:43.253 [0x7f7a81c22300] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Aug 16, 2020 02:00:43.263 [0x7f7a81c22300] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 180797476
+Aug 16, 2020 02:00:43.267 [0x7f7a81c22300] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 2584637978 bytes read:3475251 seeks:1 nb_streams:2
+Aug 16, 2020 02:00:43.268 [0x7f7a81c22300] DEBUG - [FFMPEG] - nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0
+Aug 16, 2020 02:00:43.268 [0x7f7a81c22300] DEBUG - [FFMPEG] - Decoding VPS
+Aug 16, 2020 02:00:43.268 [0x7f7a81c22300] DEBUG - [FFMPEG] - Main profile bitstream
+Aug 16, 2020 02:00:43.268 [0x7f7a81c22300] DEBUG - [FFMPEG] - nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0
+Aug 16, 2020 02:00:43.268 [0x7f7a81c22300] DEBUG - [FFMPEG] - Decoding SPS
+Aug 16, 2020 02:00:43.268 [0x7f7a81c22300] DEBUG - [FFMPEG] - Main profile bitstream
+Aug 16, 2020 02:00:43.268 [0x7f7a81c22300] DEBUG - [FFMPEG] - Decoding VUI
+Aug 16, 2020 02:00:43.268 [0x7f7a81c22300] DEBUG - [FFMPEG] - nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0
+Aug 16, 2020 02:00:43.268 [0x7f7a81c22300] DEBUG - [FFMPEG] - Decoding PPS
+Aug 16, 2020 02:00:43.270 [0x7f7a81c22300] DEBUG - [FFMPEG] - All info found
+Aug 16, 2020 02:00:43.270 [0x7f7a81c22300] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 353519 bytes read:3861388 seeks:2 frames:5
+Aug 16, 2020 02:00:43.473 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 10000 packets at 146.842993
+Aug 16, 2020 02:00:43.771 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 20000 packets at 293.760000
+Aug 16, 2020 02:00:44.023 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 30000 packets at 440.680000
+Aug 16, 2020 02:00:44.276 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 40000 packets at 587.600000
+Aug 16, 2020 02:00:44.482 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 50000 packets at 734.516825
+Aug 16, 2020 02:00:44.757 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 60000 packets at 881.429478
+Aug 16, 2020 02:00:45.005 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 70000 packets at 1028.342132
+Aug 16, 2020 02:00:45.178 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 80000 packets at 1175.254785
+Aug 16, 2020 02:00:45.409 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 90000 packets at 1322.167438
+Aug 16, 2020 02:00:45.632 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 100000 packets at 1469.080091
+Aug 16, 2020 02:00:45.881 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 110000 packets at 1616.000000
+Aug 16, 2020 02:00:46.074 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 120000 packets at 1762.920000
+Aug 16, 2020 02:00:46.251 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 130000 packets at 1909.840000
+Aug 16, 2020 02:00:46.443 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 140000 packets at 2056.753923
+Aug 16, 2020 02:00:46.751 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 150000 packets at 2203.666576
+Aug 16, 2020 02:00:46.948 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 160000 packets at 2350.579229
+Aug 16, 2020 02:00:47.145 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 170000 packets at 2497.491882
+Aug 16, 2020 02:00:47.443 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 180000 packets at 2644.404535
+Aug 16, 2020 02:00:47.711 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 190000 packets at 2791.320000
+Aug 16, 2020 02:00:47.912 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 200000 packets at 2938.240000
+Aug 16, 2020 02:00:48.126 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 210000 packets at 3085.160000
+Aug 16, 2020 02:00:48.339 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 220000 packets at 3232.078367
+Aug 16, 2020 02:00:48.589 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 230000 packets at 3378.991020
+Aug 16, 2020 02:00:48.848 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 240000 packets at 3525.903673
+Aug 16, 2020 02:00:49.022 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 250000 packets at 3672.816327
+Aug 16, 2020 02:00:49.206 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 260000 packets at 3819.728980
+Aug 16, 2020 02:00:49.407 [0x7f7a81c22300] DEBUG - Deep Analysis: Read 270000 packets at 3966.641633
+Aug 16, 2020 02:00:49.616 [0x7f7a81c22300] DEBUG - Deep Analysis: Sorting packets
+Aug 16, 2020 02:00:49.628 [0x7f7a81c22300] DEBUG - Deep Analysis: Performing file bitrate analysis
+Aug 16, 2020 02:00:49.690 [0x7f7a81c22300] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 0
+Aug 16, 2020 02:00:49.711 [0x7f7a81c22300] DEBUG - Deep Analysis: Performing stream bitrate analysis on stream 1
+Aug 16, 2020 02:00:49.752 [0x7f7a81c22300] DEBUG - Deep Analysis: Saving GoP analysis for stream 0
+Aug 16, 2020 02:00:49.754 [0x7f7a81c22300] DEBUG - Deep Analysis: Saving bitrate analysis
+Aug 16, 2020 02:00:49.758 [0x7f7a81c22300] DEBUG - Updating part with ID=39 [/media/tv/online/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part2.2160p.WEB-DL.H265.AAC-FLTTH.mp4]
+Aug 16, 2020 02:00:49.759 [0x7f7a81c22300] DEBUG - [MI] Closing input file: "/media/tv/online/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part2.2160p.WEB-DL.H265.AAC-FLTTH.mp4"
+Aug 16, 2020 02:00:49.760 [0x7f7a81c22300] DEBUG - Updating media item 37, size=5171116667, metadata_item_id=37
+Aug 16, 2020 02:00:49.760 [0x7f7a81c22300] DEBUG - Updating part with ID=38 [/media/tv/online/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4]
+Aug 16, 2020 02:00:49.761 [0x7f7a81c22300] DEBUG - Updating part with ID=39 [/media/tv/online/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part2.2160p.WEB-DL.H265.AAC-FLTTH.mp4]

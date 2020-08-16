@@ -45,3 +45,29 @@
 (I) 2020-08-15T17:00:32 - 成功监听 IP：172.19.0.4，端口：TCP/6881
 (I) 2020-08-15T17:00:32 - 成功监听 IP：172.19.0.4，端口：UDP/6881
 (I) 2020-08-15T17:00:34 - 检测到外部 IP：209.141.58.238
+(N) 2020-08-15T19:16:54 - WebAPI 登录成功。IP：::ffff:119.123.77.15
+(N) 2020-08-15T19:18:24 - 'http://ourbits.club/download.php?id=131347&passkey=06a928cf5abca0c5415a2f86b4fa4f42&https=1' 下载中，请等待...
+(N) 2020-08-15T19:18:24 - 先下载首尾文件块：关闭，torrent：'斗罗大陆.Dou.Luo.Da.Lu.2018.S01.1080p.WEB-DL.AAC.H264-OurTV'
+(N) 2020-08-15T19:18:24 - '斗罗大陆.Dou.Luo.Da.Lu.2018.S01.1080p.WEB-DL.AAC.H264-OurTV' 已添加到下载列表。
+(N) 2020-08-15T19:18:58 - Web UI：正在监听 IP：*，端口：8080
+(I) 2020-08-15T19:18:58 - 尝试监听：0.0.0.0:7000,[::]:7000
+(I) 2020-08-15T19:18:58 - 成功监听 IP：127.0.0.1，端口：TCP/7000
+(I) 2020-08-15T19:18:58 - 成功监听 IP：127.0.0.1，端口：UDP/7000
+(I) 2020-08-15T19:18:58 - 成功监听 IP：172.19.0.4，端口：TCP/7000
+(I) 2020-08-15T19:18:58 - 成功监听 IP：172.19.0.4，端口：UDP/7000
+(I) 2020-08-15T19:19:02 - 检测到外部 IP：209.141.58.238
+(N) 2020-08-16T09:32:33 - WebAPI 登录成功。IP：::ffff:119.123.176.8
+(N) 2020-08-16T09:32:47 - 'http://ourbits.club/download.php?id=131372&passkey=06a928cf5abca0c5415a2f86b4fa4f42&https=1' 下载中，请等待...
+(N) 2020-08-16T09:32:48 - 先下载首尾文件块：关闭，torrent：'乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH'
+(N) 2020-08-16T09:32:48 - '乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH' 已添加到下载列表。
+(N) 2020-08-16T09:40:24 - 成功移动 torrent：乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH。新路径：/downloads/tv/online/
+(N) 2020-08-16T09:40:31 - 成功移动 torrent：乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH。新路径：/downloads/tv/sync/
+(N) 2020-08-16T09:40:41 - 'http://ourbits.club/download.php?id=130981&passkey=06a928cf5abca0c5415a2f86b4fa4f42&https=1' 下载中，请等待...
+(N) 2020-08-16T09:40:43 - 先下载首尾文件块：关闭，torrent：'乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH'
+(N) 2020-08-16T09:40:43 - '乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH' 已添加到下载列表。
+(N) 2020-08-16T09:40:54 - 成功移动 torrent：乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH。新路径：/downloads/tv/online/
+(N) 2020-08-16T09:41:09 - 成功移动 torrent：乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH。新路径：/downloads/tv/online/
+(N) 2020-08-16T09:45:10 - 'http://ourbits.club/download.php?id=131373&passkey=06a928cf5abca0c5415a2f86b4fa4f42&https=1' 下载中，请等待...
+(N) 2020-08-16T09:45:10 - 先下载首尾文件块：关闭，torrent：'凡人修仙传.The.Mortal.Ascention.2020.1080p.WEB-DL.H264.AAC-OurTV'
+(N) 2020-08-16T09:45:10 - '凡人修仙传.The.Mortal.Ascention.2020.1080p.WEB-DL.H264.AAC-OurTV' 已添加到下载列表。
+(N) 2020-08-16T09:45:18 - 成功移动 torrent：凡人修仙传.The.Mortal.Ascention.2020.1080p.WEB-DL.H264.AAC-OurTV。新路径：/downloads/tv/sync/

@@ -1,0 +1,65 @@
+Aug 16, 2020 01:34:17.871 [0x7f6a48e50700] INFO - Plex Media Scanner v1.19.5.3112-b23ab3896 - Docker Docker Container (LinuxServer.io) x86_64 - build: linux-x86_64 - GMT 00:00
+Aug 16, 2020 01:34:17.871 [0x7f6a48e50700] INFO - Linux version: 4.15.0-112-generic, language: en-US
+Aug 16, 2020 01:34:17.871 [0x7f6a48e50700] INFO - Processor AMD Ryzen 9 3900X 12-Core Processor            
+Aug 16, 2020 01:34:17.871 [0x7f6a48e50700] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --item 37
+Aug 16, 2020 01:34:17.886 [0x7f6a5159c300] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.26.0, threadsafe=1
+Aug 16, 2020 01:34:18.132 [0x7f6a5159c300] DEBUG - Analyzing media parts for item 37 (乐队的夏天 the Big Band): 33
+Aug 16, 2020 01:34:18.133 [0x7f6a5159c300] DEBUG - [ID 33] Media part analysis: /media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4
+Aug 16, 2020 01:34:18.133 [0x7f6a5159c300] DEBUG - [MI] Opening input file: "/media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4"
+Aug 16, 2020 01:34:18.133 [0x7f6a5159c300] DEBUG - [FFMPEG] - Opening '/media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4' for reading
+Aug 16, 2020 01:34:18.134 [0x7f6a5159c300] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto'
+Aug 16, 2020 01:34:18.141 [0x7f6a5159c300] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Aug 16, 2020 01:34:18.141 [0x7f6a5159c300] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Aug 16, 2020 01:34:18.143 [0x7f6a5159c300] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Aug 16, 2020 01:34:18.158 [0x7f6a5159c300] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 10800, duration: 367023600
+Aug 16, 2020 01:34:18.163 [0x7f6a5159c300] DEBUG - [FFMPEG] - Offset DTS by 10800 to make first pts zero.
+Aug 16, 2020 01:34:18.164 [0x7f6a5159c300] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Aug 16, 2020 01:34:18.184 [0x7f6a5159c300] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 179846150
+Aug 16, 2020 01:34:18.193 [0x7f6a5159c300] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 2586478689 bytes read:3457463 seeks:1 nb_streams:2
+Aug 16, 2020 01:34:18.194 [0x7f6a5159c300] DEBUG - [FFMPEG] - nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0
+Aug 16, 2020 01:34:18.194 [0x7f6a5159c300] DEBUG - [FFMPEG] - Decoding VPS
+Aug 16, 2020 01:34:18.194 [0x7f6a5159c300] DEBUG - [FFMPEG] - Main profile bitstream
+Aug 16, 2020 01:34:18.194 [0x7f6a5159c300] DEBUG - [FFMPEG] - nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0
+Aug 16, 2020 01:34:18.194 [0x7f6a5159c300] DEBUG - [FFMPEG] - Decoding SPS
+Aug 16, 2020 01:34:18.194 [0x7f6a5159c300] DEBUG - [FFMPEG] - Main profile bitstream
+Aug 16, 2020 01:34:18.194 [0x7f6a5159c300] DEBUG - [FFMPEG] - Decoding VUI
+Aug 16, 2020 01:34:18.194 [0x7f6a5159c300] DEBUG - [FFMPEG] - nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0
+Aug 16, 2020 01:34:18.194 [0x7f6a5159c300] DEBUG - [FFMPEG] - Decoding PPS
+Aug 16, 2020 01:34:18.200 [0x7f6a5159c300] DEBUG - [FFMPEG] - All info found
+Aug 16, 2020 01:34:18.203 [0x7f6a5159c300] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 47542 bytes read:3523598 seeks:2 frames:5
+Aug 16, 2020 01:34:18.203 [0x7f6a5159c300] DEBUG - [MI] Opening "/media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4" for MP4 atom parsing
+Aug 16, 2020 01:34:18.203 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 28 at offset 0
+Aug 16, 2020 01:34:18.203 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Skipping free atom of size 8 at offset 28
+Aug 16, 2020 01:34:18.203 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Skipping mdat atom of size 2583053958 at offset 36
+Aug 16, 2020 01:34:18.203 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Found moov atom of size 3424695 at offset 2583053994
+Aug 16, 2020 01:34:18.205 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Found trak atom of size 1635043 at offset 2583054110
+Aug 16, 2020 01:34:18.206 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Found trak atom of size 1789438 at offset 2584689153
+Aug 16, 2020 01:34:18.206 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Found mdia atom of size 1634907 at offset 2583054246
+Aug 16, 2020 01:34:18.206 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Found minf atom of size 1634822 at offset 2583054331
+Aug 16, 2020 01:34:18.206 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Found stbl atom of size 1634758 at offset 2583054395
+Aug 16, 2020 01:34:18.206 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Found mdia atom of size 1789302 at offset 2584689289
+Aug 16, 2020 01:34:18.206 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Found minf atom of size 1789217 at offset 2584689374
+Aug 16, 2020 01:34:18.206 [0x7f6a5159c300] DEBUG - Mp4AtomParser: Found stbl atom of size 1789157 at offset 2584689434
+Aug 16, 2020 01:34:18.206 [0x7f6a5159c300] DEBUG - [MI]  * ad1c785fbedd442c032f913d4831e14bbc608ef9 [mp4 hevc/aac] Duration: 4078144ms, 3840x2160 (1.777778) 25.000fps, bitrate=5073kbps, audio channels=2, optimizedForStreaming=0 ("/media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4")
+Aug 16, 2020 01:34:18.206 [0x7f6a5159c300] DEBUG - [MI] Chapters had generic titles, clearing.
+Aug 16, 2020 01:34:18.207 [0x7f6a5159c300] DEBUG - [MI] Closing input file: "/media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part1.2160p.WEB-DL.H265.AAC-FLTTH.mp4"
+Aug 16, 2020 01:34:18.211 [0x7f6a5159c300] DEBUG - Streams didn't change in analysis, not saving.
+Aug 16, 2020 01:34:18.211 [0x7f6a5159c300] DEBUG - [ID 34] Media part analysis: /media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part2.2160p.WEB-DL.H265.AAC-FLTTH.mp4
+Aug 16, 2020 01:34:18.211 [0x7f6a5159c300] DEBUG - [MI] Opening input file: "/media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part2.2160p.WEB-DL.H265.AAC-FLTTH.mp4"
+Aug 16, 2020 01:34:18.211 [0x7f6a5159c300] DEBUG - [FFMPEG] - Opening '/media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part2.2160p.WEB-DL.H265.AAC-FLTTH.mp4' for reading
+Aug 16, 2020 01:34:18.212 [0x7f6a5159c300] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto'
+Aug 16, 2020 01:34:18.213 [0x7f6a5159c300] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Aug 16, 2020 01:34:18.213 [0x7f6a5159c300] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Aug 16, 2020 01:34:18.213 [0x7f6a5159c300] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Aug 16, 2020 01:34:18.227 [0x7f6a5159c300] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 10800, duration: 368964000
+Aug 16, 2020 01:34:18.232 [0x7f6a5159c300] DEBUG - [FFMPEG] - Offset DTS by 10800 to make first pts zero.
+Aug 16, 2020 01:34:18.233 [0x7f6a5159c300] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Aug 16, 2020 01:34:18.233 [0x7f6a5159c300] ERROR - [FFMPEG] - error reading header
+Aug 16, 2020 01:34:18.238 [0x7f6a5159c300] ERROR - Exception analyzing media file '/media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part2.2160p.WEB-DL.H265.AAC-FLTTH.mp4' (Could not parse /media/tv/乐队的夏天.The.Big.Band.2020.S02.2160p.WEB-DL.H265.AAC-FLTTH/乐队的夏天.The.Big.Band.2020.S02E07.Part2.2160p.WEB-DL.H265.AAC-FLTTH.mp4 (error=-1094995529): Invalid data found when processing input)
+Aug 16, 2020 01:34:18.238 [0x7f6a5159c300] ERROR - Failed to successfully analyze part 34.
+Aug 16, 2020 01:34:18.240 [0x7f6a5159c300] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Aug 16, 2020 01:34:18.240 [0x7f6a5159c300] DEBUG - HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Aug 16, 2020 01:34:18.241 [0x7f6a5159c300] DEBUG - HTTP 200 response from GET http://127.0.0.1:32400/library/changestamp
+Aug 16, 2020 01:34:18.242 [0x7f6a5159c300] DEBUG - Updating metadata item (save) (乐队的夏天 the Big Band) with ID 37
+Aug 16, 2020 01:34:18.251 [0x7f6a42d7e700] DEBUG - HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache
+Aug 16, 2020 01:34:18.252 [0x7f6a42d7e700] DEBUG - HTTP 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache
