@@ -87,5 +87,3 @@ services:
       - 8886:8888
       - 55555:55555
     restart: unless-stopped
-networks:
-  fq:
