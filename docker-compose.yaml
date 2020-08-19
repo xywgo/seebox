@@ -31,6 +31,7 @@ services:
   flexget:
     image: xywgo/flexget
     container_name: flexget
+    restart: always
     environment: 
       - PUID=1000
       - PGID=1000
