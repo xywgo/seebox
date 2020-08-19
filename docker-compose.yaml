@@ -28,6 +28,18 @@ services:
       - 7000:7000/udp
       - 8080:8080
     restart: unless-stopped
+  flexget:
+    image: xywgo/flexget
+    container_name: flexget
+    environment: 
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    ports: 
+      - "8600:8600"
+    volumes: 
+      - ~/downloads/torrents:/torrents
+      - ./config/flexget:/config
   filebrowser:
     image: filebrowser/filebrowser
     container_name: filebrowser
