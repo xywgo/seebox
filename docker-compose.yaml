@@ -81,7 +81,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - PLEX_CLAIM=claim-yZ5y7CGxXR3ungUsv-Jo # Replace this TOKEN!!! acess https://www.plex.tv/claim/ to get it
+      - PLEX_CLAIM=claim-9rzkhSLx7CvYW3nkMzuj # Replace this TOKEN!!! acess https://www.plex.tv/claim/ to get it
       - UMASK_SET=022 #optional
     restart: unless-stopped
     hostname: "BuyVM" # change the name to whatever you like
