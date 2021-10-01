@@ -86,7 +86,7 @@ services:
     restart: unless-stopped
     hostname: "BuyVM" # change the name to whatever you like
   resilio-sync:
-    image: ghcr.io/linuxserver/resilio-syncc
+    image: ghcr.io/linuxserver/resilio-sync
     container_name: resilio-sync
     environment:
       - PUID=1000
