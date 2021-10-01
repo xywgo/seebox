@@ -12,7 +12,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./config/portainer/data:/data
   qbittorrent:
-    image: linuxserver/qbittorrent
+    image: ghcr.io/linuxserver/qbittorrent
     container_name: qbittorrent
     environment:
       - PUID=1000
@@ -71,7 +71,7 @@ services:
       - "6888:6888"
       - "6888:6888/udp"
   plex:
-    image: linuxserver/plex
+    image: ghcr.io/linuxserver/plex
     network_mode: host
     container_name: plex
     volumes:
@@ -86,12 +86,12 @@ services:
     restart: unless-stopped
     hostname: "BuyVM" # change the name to whatever you like
   resilio-sync:
-    image: linuxserver/resilio-sync
+    image: ghcr.io/linuxserver/resilio-syncc
     container_name: resilio-sync
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Asia/Shanghai
       - UMASK_SET=022
     volumes:
       - ./config/resilio:/config
@@ -100,4 +100,21 @@ services:
     ports:
       - 8886:8888
       - 55555:55555
+    restart: unless-stopped
+  syncthing:
+    image: ghcr.io/linuxserver/syncthing
+    container_name: syncthing
+    hostname: syncthing #optional
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config/syncthing:/config
+      - /home/xywgo/downloads:/data
+    ports:
+      - 8384:8384
+      - 22000:22000/tcp
+      - 22000:22000/udp
+      - 21027:21027/udp
     restart: unless-stopped
