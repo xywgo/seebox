@@ -1,4 +1,4 @@
-FROM lsiobase/alpine
+FROM ghcr.io/linuxserver/baseimage-alpine:last
 LABEL maintainer="xywgo"
 LABEL version="3.1.135"
 
