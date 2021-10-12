@@ -65,8 +65,8 @@ services:
     network_mode: host
     container_name: plex
     volumes:
-      - srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/media:rw # The media folder
-      - srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/transcode # Transcoder temporary directory
+      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/media:rw # The media folder
+      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/transcode # Transcoder temporary directory
       - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/plex:/config # Configurations
     environment:
       - PUID=1000
