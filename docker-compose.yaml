@@ -1,16 +1,6 @@
 version: "3"
 
 services:
-  portainer:
-    image: portainer/portainer
-    container_name: portainer
-    restart: always
-    ports:
-      - "9000:9000"
-      - "8090:8000"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ./config/portainer/data:/data
   qbittorrent:
     image: ghcr.io/linuxserver/qbittorrent
     container_name: qbittorrent
@@ -21,8 +11,8 @@ services:
       - UMASK_SET=022
       - WEBUI_PORT=8080
     volumes:
-      - ./config/qbittorrent:/config
-      - /home/xywgo/downloads:/downloads
+      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/qbittorrent:/config
+      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/downloads
     ports:
       - 7000:7000
       - 7000:7000/udp
@@ -40,15 +30,15 @@ services:
     ports: 
       - "8600:8600"
     volumes: 
-      - ~/downloads/torrents:/torrents
-      - ./config/flexget:/config
+      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media/torrents:/torrents
+      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/flexget:/config
   filebrowser:
     image: filebrowser/filebrowser
     container_name: filebrowser
     ports:
       - "8000:80"
     volumes:
-      - /home/xywgo/downloads:/srv
+      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6:/srv
     environment:
       - PUID=1000
       - PGID=1000
@@ -57,8 +47,8 @@ services:
     image: p3terx/aria2-pro
     container_name: aria2
     volumes: 
-      - ./config/aria2:/config
-      - /home/xywgo/downloads:/downloads
+      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/aria2:/config
+      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/Others:/downloads
     environment: 
       - PUID=1000
       - PGID=1000
@@ -75,9 +65,9 @@ services:
     network_mode: host
     container_name: plex
     volumes:
-      - /home/xywgo/downloads:/media:rw # The media folder
-      - /home/xywgo/downloads/transcode:/transcode # Transcoder temporary directory
-      - ./config/plex:/config # Configurations
+      - srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/media:rw # The media folder
+      - srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/transcode # Transcoder temporary directory
+      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/plex:/config # Configurations
     environment:
       - PUID=1000
       - PGID=1000
@@ -85,36 +75,36 @@ services:
       - UMASK_SET=022 #optional
     restart: unless-stopped
     hostname: "BuyVM" # change the name to whatever you like
-  resilio-sync:
-    image: ghcr.io/linuxserver/resilio-sync
-    container_name: resilio-sync
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Asia/Shanghai
-      - UMASK_SET=022
-    volumes:
-      - ./config/resilio:/config
-      - /home/xywgo/downloads:/downloads
-      - /home/xywgo/downloads:/sync
-    ports:
-      - 8886:8888
-      - 55555:55555
-    restart: unless-stopped
-  syncthing:
-    image: ghcr.io/linuxserver/syncthing
-    container_name: syncthing
-    hostname: syncthing #optional
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Asia/Shanghai
-    volumes:
-      - ./config/syncthing:/config
-      - /home/xywgo/downloads:/data
-    ports:
-      - 8384:8384
-      - 22000:22000/tcp
-      - 22000:22000/udp
-      - 21027:21027/udp
-    restart: unless-stopped
+  # resilio-sync:
+  #   image: ghcr.io/linuxserver/resilio-sync
+  #   container_name: resilio-sync
+  #   environment:
+  #     - PUID=1000
+  #     - PGID=1000
+  #     - TZ=Asia/Shanghai
+  #     - UMASK_SET=022
+  #   volumes:
+  #     - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/resilio:/config
+  #     - /home/xywgo/downloads:/downloads
+  #     - /home/xywgo/downloads:/sync
+  #   ports:
+  #     - 8886:8888
+  #     - 55555:55555
+  #   restart: unless-stopped
+  # syncthing:
+  #   image: ghcr.io/linuxserver/syncthing
+  #   container_name: syncthing
+  #   hostname: syncthing #optional
+  #   environment:
+  #     - PUID=1000
+  #     - PGID=1000
+  #     - TZ=Asia/Shanghai
+  #   volumes:
+  #     - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/syncthing:/config
+  #     - /home/xywgo/downloads:/data
+  #   ports:
+  #     - 8384:8384
+  #     - 22000:22000/tcp
+  #     - 22000:22000/udp
+  #     - 21027:21027/udp
+  #   restart: unless-stopped
