@@ -32,17 +32,17 @@ services:
     volumes: 
       - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media/torrents:/torrents
       - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/flexget:/config
-  filebrowser:
-    image: filebrowser/filebrowser
-    container_name: filebrowser
-    ports:
-      - "8000:80"
-    volumes:
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6:/srv
-    environment:
-      - PUID=1000
-      - PGID=1000
-    restart: unless-stopped
+  # filebrowser:
+  #   image: filebrowser/filebrowser
+  #   container_name: filebrowser
+  #   ports:
+  #     - "8000:80"
+  #   volumes:
+  #     - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6:/srv
+  #   environment:
+  #     - PUID=1000
+  #     - PGID=1000
+  #   restart: unless-stopped
   aria2:
     image: p3terx/aria2-pro
     container_name: aria2
