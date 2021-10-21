@@ -11,8 +11,8 @@ services:
       - UMASK_SET=022
       - WEBUI_PORT=8080
     volumes:
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/qbittorrent:/config
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/downloads
+      - /home/xywgo/data/docker/config/qbittorrent:/config
+      - /home/xywgo/data/media:/downloads
     ports:
       - 7000:7000
       - 7000:7000/udp
@@ -30,25 +30,25 @@ services:
     ports: 
       - "8600:8600"
     volumes: 
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media/torrents:/torrents
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/flexget:/config
-  # filebrowser:
-  #   image: filebrowser/filebrowser
-  #   container_name: filebrowser
-  #   ports:
-  #     - "8000:80"
-  #   volumes:
-  #     - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6:/srv
-  #   environment:
-  #     - PUID=1000
-  #     - PGID=1000
-  #   restart: unless-stopped
+      - /home/xywgo/data/media/torrents:/torrents
+      - /home/xywgo/data/docker/config/flexget:/config
+  filebrowser:
+    image: filebrowser/filebrowser
+    container_name: filebrowser
+    ports:
+      - "8000:80"
+    volumes:
+      - /home/xywgo/data:/srv
+    environment:
+      - PUID=1000
+      - PGID=1000
+    restart: unless-stopped
   aria2:
     image: p3terx/aria2-pro
     container_name: aria2
     volumes: 
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/aria2:/config
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/Others:/downloads
+      - /home/xywgo/data/docker/config/aria2:/config
+      - /home/xywgo/data/Others:/downloads
     environment: 
       - PUID=1000
       - PGID=1000
@@ -65,9 +65,9 @@ services:
     network_mode: host
     container_name: plex
     volumes:
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/media:rw # The media folder
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/transcode # Transcoder temporary directory
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/plex:/config # Configurations
+      - /home/xywgo/data/media:/media:rw # The media folder
+      - /home/xywgo/data/media:/transcode # Transcoder temporary directory
+      - /home/xywgo/data/docker/config/plex:/config # Configurations
     environment:
       - PUID=1000
       - PGID=1000
@@ -84,7 +84,7 @@ services:
   #     - TZ=Asia/Shanghai
   #     - UMASK_SET=022
   #   volumes:
-  #     - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/resilio:/config
+  #     - /home/xywgo/data/docker/config/resilio:/config
   #     - /home/xywgo/downloads:/downloads
   #     - /home/xywgo/downloads:/sync
   #   ports:
@@ -100,8 +100,8 @@ services:
       - PGID=1000
       - TZ=Asia/Shanghai
     volumes:
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/docker/config/syncthing:/config
-      - /srv/dev-disk-by-uuid-9ee3d524-c27c-437c-8301-deb7c20607b6/media:/data
+      - /home/xywgo/data/docker/config/syncthing:/config
+      - /home/xywgo/data/media:/data
     ports:
       - 8384:8384
       - 22000:22000/tcp
