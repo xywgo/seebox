@@ -36,7 +36,7 @@ services:
     image: filebrowser/filebrowser
     container_name: filebrowser
     ports:
-      - "8000:80"
+      - "8900:80"
     volumes:
       - /home/xywgo/data:/srv
     environment:
@@ -108,3 +108,8 @@ services:
       - 22000:22000/udp
       - 21027:21027/udp
     restart: unless-stopped
+    docker run -d -p 8000:8000 -p 9000:9000 --name portainer \
+    --restart=always \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /home/xywgo/data/docker/portainer:/data \
+    portainer/portainer-ce:latest
