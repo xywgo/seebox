@@ -4,7 +4,7 @@ LABEL version="3.3.3"
 
 RUN \
     echo "**** install flexget ****" && \
-    apk add --no-cache --virtual  .build-deps gcc g++ musl-dev && \
+    apk add --no-cache --virtual  .build-deps gcc g++ musl-dev linux-headers && \
     pip3 install -U pip && pip3 install flexget && \
     apk del .build-deps gcc musl-dev
 
