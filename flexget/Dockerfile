@@ -1,6 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.13
+FROM ghcr.io/linuxserver/baseimage-alpine:3.14
 LABEL maintainer="xywgo"
-LABEL version="3.1.90"
+LABEL version="3.3.3"
 
 RUN \
 	echo "**** install python3 ****" && \
